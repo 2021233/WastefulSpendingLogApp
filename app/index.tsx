@@ -1,4 +1,5 @@
 import { Text, View } from "react-native";
+import { VoltraAndroid } from 'voltra';
 
 export default function Index() {
   return (
@@ -13,3 +14,33 @@ export default function Index() {
     </View>
   );
 }
+
+const MyWidget = () => (
+  <VoltraAndroid.Column
+    style={{
+      padding: 16,
+      backgroundColor: '#3DDC84',
+      width: '100%',
+      height: '100%',
+    }}
+    verticalAlignment="center-vertically"
+    horizontalAlignment="center-horizontally"
+  >
+    <VoltraAndroid.Text
+      style={{
+        color: 'white',
+        fontSize: 18,
+        fontWeight: 'bold',
+      }}
+    >
+      Android Widget
+    </VoltraAndroid.Text>
+    <VoltraAndroid.Text
+      style={{
+        color: 'white',
+      }}
+    >
+      Powered by Voltra & Glance
+    </VoltraAndroid.Text>
+  </VoltraAndroid.Column>
+);
