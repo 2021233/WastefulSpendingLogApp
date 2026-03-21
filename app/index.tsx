@@ -1,5 +1,6 @@
 import { Text, View } from "react-native";
 import { VoltraAndroid } from 'voltra';
+import { updateWidget } from 'voltra/client';
 
 export default function Index() {
   return (
@@ -43,4 +44,6 @@ const MyWidget = () => (
       Powered by Voltra & Glance
     </VoltraAndroid.Text>
   </VoltraAndroid.Column>
-);
+)
+
+await updateWidget('my_widget', <MyWidget />);

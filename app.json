@@ -39,6 +39,23 @@
             "backgroundColor": "#000000"
           }
         }
+      ],
+      [
+        "voltra",
+        {
+          "android": {
+            "widgets": [
+              {
+                "id": "my_widget",
+                "name": "My First Widget",
+                "description": "A simple Voltra widget",
+                "displayName": "SampleWidget",
+                "targetCellWidth": 2,
+                "targetCellHeight": 1
+              }
+            ]
+          }
+        }
       ]
     ],
     "experiments": {
