@@ -1,5 +1,5 @@
 import { Text, View } from "react-native"
-import { VoltraAndroid } from "voltra"
+import { VoltraAndroid } from "voltra/android"
 import { VoltraWidgetPreview } from "voltra/android/client"
 
 export default function Index() {
@@ -17,11 +17,11 @@ export default function Index() {
   )
 }
 
-export function MyWidgetPreview() {
+function MyWidgetPreview() {
   return (
     <VoltraWidgetPreview
       family="mediumWide"
-      style={{ backgroundColor: "#f0f0f0", borderRadius: 16 }}
+      style={{ backgroundColor: "#aaaaaa", borderRadius: 16 }}
     >
       <VoltraAndroid.Column style={{ padding: 16 }}>
         <VoltraAndroid.Text style={{ fontSize: 20, fontWeight: "bold" }}>

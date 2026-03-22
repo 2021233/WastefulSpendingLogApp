@@ -1,8 +1,7 @@
-import { VoltraAndroid } from "voltra"
+import { VoltraAndroid } from "voltra/android"
 // import { updateWidget } from "voltra/client"
-import { VoltraWidgetPreview } from "voltra/android/client"
 
-export function MyWidget() {
+export default function MyWidget() {
   return (
     <VoltraAndroid.Column
       style={{
